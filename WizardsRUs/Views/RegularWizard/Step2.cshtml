@@ -1,0 +1,13 @@
+﻿@model WizardsRUs.Models.RegularThing
+
+@{
+    ViewBag.Title = "Step2";
+}
+
+<h2>Step2</h2>
+@using (Html.BeginForm("step3", "regularwizard", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Checkbox)
+    @Html.CheckBoxFor(m => m.Checkbox)
+    <input type="submit" />
+}

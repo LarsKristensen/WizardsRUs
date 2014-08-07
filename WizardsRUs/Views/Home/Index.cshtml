@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Wizards R Us</h1>
+
+<p>Click @Html.ActionLink("here", "step1", "regularwizard") to start the Regular wizard!</p>
+<p>Click @Html.ActionLink("here", "step1", "acsrfwizard") to start the Anti-CSRF wizard!</p>
+<p>Click @Html.ActionLink("here", "step1", "authwizard") to start the Authentication-based wizard!</p>     
+
+@if (Session["ordered"] != null)
+{
+    <h3>Current orders</h3>
+    <ul>
+    @foreach (WizardsRUs.Models.IWizardThing w in (List<WizardsRUs.Models.IWizardThing>)Session["ordered"])
+    {
+        <li>@w.ToString()</li>
+    }
+    </ul>
+}

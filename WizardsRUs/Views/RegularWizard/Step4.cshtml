@@ -1,0 +1,16 @@
+﻿@model WizardsRUs.Models.RegularThing
+
+@{
+    ViewBag.Title = "Step4";
+}
+
+<h2>Step4 - Confirmation</h2>
+@using (Html.BeginForm("confirm", "regularwizard", FormMethod.Post))
+{
+    @Html.Label("Your order:")<br />
+    @Model.ToString()
+    
+    <p>Click the button to order</p>
+    <input type="submit" />
+}
+

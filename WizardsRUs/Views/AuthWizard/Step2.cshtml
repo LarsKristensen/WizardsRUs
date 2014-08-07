@@ -1,0 +1,14 @@
+﻿@model WizardsRUs.Models.AuthThing
+
+@{
+    ViewBag.Title = "Step2";
+}
+
+<h2>Step2</h2>
+@using (Html.BeginForm("step3", "authwizard", FormMethod.Post))
+{
+    //@Html.AntiForgeryToken()
+    @Html.LabelFor(m => m.Checkbox)
+    @Html.CheckBoxFor(m => m.Checkbox)
+    <input type="submit" />
+}

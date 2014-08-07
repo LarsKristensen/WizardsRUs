@@ -1,0 +1,15 @@
+﻿@model WizardsRUs.Models.RegularThing
+
+@{
+    ViewBag.Title = "Step1";
+}
+
+<h2>Step1</h2>
+
+@using (Html.BeginForm("step2", "regularwizard", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Text)
+    @Html.TextBoxFor(m => m.Text)
+    <br />
+    <input type="submit" />
+}

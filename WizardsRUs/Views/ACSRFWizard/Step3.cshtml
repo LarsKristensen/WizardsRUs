@@ -1,0 +1,36 @@
+﻿@model WizardsRUs.Models.ACSRFThing
+
+@{
+    ViewBag.Title = "Step3";
+}
+
+<h2>Step3</h2>
+@using (Html.BeginForm("step4", "acsrfwizard", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.LabelFor(m => m.Radio)<br />
+
+    @Html.RadioButtonFor(m => m.Radio, WizardsRUs.Models.RadioChoice.Radio1) 
+    @Html.Label("Radio 1")
+    <br />
+    
+    @Html.RadioButtonFor(m => m.Radio, WizardsRUs.Models.RadioChoice.Radio2) 
+    @Html.Label("Radio 2")
+    <br />
+    
+    @Html.RadioButtonFor(m => m.Radio, WizardsRUs.Models.RadioChoice.Radio3) 
+    @Html.Label("Radio 3")
+    <br />
+    
+    if (!string.IsNullOrEmpty(Model.Text))
+    {
+        if (Model.Text.ToLower().Contains("dummy"))
+        {
+            <text><p><strong>NOTE:</strong> This page now has a "DummyVulnerability"</p></text>
+            @Html.CheckBoxFor(m => m.ExtraCheckbox)
+            @Html.LabelFor(m => m.ExtraCheckbox)
+        } 
+    }
+    
+    <input type="submit" />
+}

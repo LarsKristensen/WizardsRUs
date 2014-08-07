@@ -1,0 +1,17 @@
+﻿@model WizardsRUs.Models.AuthThing
+
+@{
+    ViewBag.Title = "Step4";
+}
+
+<h2>Step4</h2>
+@using(Html.BeginForm("confirm", "authwizard", FormMethod.Post))
+{
+    //@Html.AntiForgeryToken()
+    @Html.Label("Your order:")<br />
+    @Model.ToString()
+    
+    <p>Click the button to order</p>
+    <input type="submit" />
+}
+

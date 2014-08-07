@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/wizard.css")" rel="stylesheet" type="text/css" />
+    <title>Wizards R Us! - @ViewBag.Title</title>
+</head>
+<body>
+    <div id="user" style="background-color:lightblue">
+      @if (User.Identity.IsAuthenticated)
+      {
+          <p>Welcome <strong>@User.Identity.Name!</strong> Click @Html.ActionLink("here", "logout", "home") to log out.</p> 
+      }  
+      else
+      {
+         <p>Click <strong>@Html.ActionLink("here", "login", "home")</strong> to log in.</p>
+      }
+    </div>
+@RenderBody()
+<div id="debug" style="background-color: yellow; padding: 6px; display: inline-block; min-width: 250px; position: absolute; top: 0px; right: 0px; float: right;">
+    <h1>Debugging box</h1>
+    <p>To reset everything, go to "/home/reset/"</p>
+    <table>
+        <tr><th>Timestamp</th><th>Session ID</th><th>URL requested</th></tr>    
+        @foreach (String s in WizardsRUs.Controllers.HomeController.GetRequests())
+        { 
+            @Html.Raw(s)
+        }
+        </table>
+    </div>
+</body>
+</html>
