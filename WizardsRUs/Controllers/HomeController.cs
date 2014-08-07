@@ -18,7 +18,8 @@ namespace WizardsRUs.Controllers
 
             validUsers.Add("Alice", "test1");
             validUsers.Add("Bob", "test2");
-            validUsers.Add("Carol", "test3");
+            validUsers.Add("Charlie", "test3");
+            validUsers.Add("Dave", "test4");
 
             return validUsers;
         }
