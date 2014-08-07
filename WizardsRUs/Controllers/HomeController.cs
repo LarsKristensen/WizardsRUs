@@ -16,10 +16,11 @@ namespace WizardsRUs.Controllers
         {
             Dictionary<string, string> validUsers = new Dictionary<string, string>();
 
-            validUsers.Add("Alice", "test1");
-            validUsers.Add("Bob", "test2");
-            validUsers.Add("Charlie", "test3");
-            validUsers.Add("Dave", "test4");
+            validUsers.Add("Alice", "Alice1");
+            validUsers.Add("Bob", "Bob2");
+            validUsers.Add("Charlie", "Charlie3");
+            validUsers.Add("Dave", "Dave4");
+            validUsers.Add("Eve", "Eve5");
 
             return validUsers;
         }
