@@ -1,7 +1,7 @@
 Wizards R Us
 ============
 
-An Asp.Net MVC solution for Visual Studio 2012, used for testing web-wizards with different properties. 
+An ASP.Net MVC solution for Visual Studio 2012, used for testing web-wizards with different properties. 
 
 It is used to test the Sequence mechanism for ZAP, found here:
 https://github.com/LarsKristensen/SequenceZAP
@@ -24,6 +24,6 @@ You can also add new credentials, in the dictionary of the HomeControler.
 Read more about the Sequence mechanism, how it works and how it was implemented, on our development blog:
 http://zapmultistep.wordpress.com/ 
 
-NOTE: Some people have been getting "HTTP 500.19" error messages, when trying to run the solution. Make sure that the IIS can read the configuration file. Follow the instructions, on how to solve the specific error, at: 
+**NOTE:** Some people have been getting _HTTP 500.19_ IIS error messages, when trying to run the solution. Make sure that the IIS can read the configuration file. Follow the instructions, on how to solve the specific error, at: 
 http://support.microsoft.com/kb/942055#codeB
 
