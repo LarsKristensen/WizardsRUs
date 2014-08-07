@@ -1,7 +1,7 @@
 WizardsRUs
 ==========
 
-An Asp.Net MVC solution, used for testing different web-wizards. 
+An Asp.Net MVC solution for Visual Studio 2012, used for testing web-wizards with different properties. 
 
 It is used to test the Sequence mechanism for ZAP, found here:
 https://github.com/LarsKristensen/SequenceZAP
