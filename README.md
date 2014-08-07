@@ -1,5 +1,5 @@
-WizardsRUs
-==========
+Wizards R Us
+============
 
 An Asp.Net MVC solution for Visual Studio 2012, used for testing web-wizards with different properties. 
 
