@@ -16,8 +16,8 @@ namespace WizardsRUs.Controllers
         {
             Dictionary<string, string> validUsers = new Dictionary<string, string>();
 
-            validUsers.Add("Lars", "Hest");
-            validUsers.Add("Stefan", "Test");
+            validUsers.Add("user1", "pw1");
+            validUsers.Add("user2", "pw2");
 
             return validUsers;
         }
