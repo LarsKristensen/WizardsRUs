@@ -3,7 +3,28 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link href="@Url.Content("~/Content/wizard.css")" rel="stylesheet" type="text/css" />
+    <style>
+    #debug
+    {
+        background-color: #ffff00; 
+        padding: 6px; 
+        display: inline-block; 
+        min-width: 250px; 
+        position: absolute; 
+        top: 0px; 
+        right: 0px; 
+        float: right;
+    }
+
+    table,th,td
+    {
+        border:3px solid #000000;
+        border-collapse:collapse;
+        font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+        padding: 3px;
+    }
+    </style>
+
     <title>Wizards R Us! - @ViewBag.Title</title>
 </head>
 <body>
@@ -18,7 +39,7 @@
       }
     </div>
 @RenderBody()
-<div id="debug" style="background-color: yellow; padding: 6px; display: inline-block; min-width: 250px; position: absolute; top: 0px; right: 0px; float: right;">
+<div id="debug">
     <h1>Debugging box</h1>
     <p>To reset everything, go to "/home/reset/"</p>
     <table>

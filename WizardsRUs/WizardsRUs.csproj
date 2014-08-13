@@ -121,7 +121,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="Content\wizard.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -133,9 +132,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
+    <Content Include="Zaproxy_Files\DummyVulnerability.java" />
+    <Content Include="Zaproxy_Files\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
