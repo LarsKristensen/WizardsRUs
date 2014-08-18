@@ -190,6 +190,11 @@
   <ItemGroup>
     <Content Include="Views\AuthWizard\Step4.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Zaproxy_Files\Scripts\ACSRF wizard.zst" />
+    <Content Include="Zaproxy_Files\Scripts\Authentication wizard.zst" />
+    <Content Include="Zaproxy_Files\Scripts\Regular wizard.zst" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
